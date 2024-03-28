@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Sam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,500;1,800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+            'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+            sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #ed434b;
+        }
+
+        .navbar-container {
+            background: #ed434b;
+        }
+
+        .mobile-logo {
+            max-height: 15vh;
+            max-width: 80%;
+        }
+
+        .book-cover-image {
+            max-height: 80vh;
+            width: auto;
+        }
+
+        #section1 {
+            background-color: #d9f6fd;
+        }
+
+        #section2 {
+            position: relative;
+            color: white;
+            margin: 0;
+            padding: 0;
+            min-height: 110vh;
+        }
+
+        #samGunImage {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .footer-image {
+            max-height: 100px;
+        }
+
+        .footer-text {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-email {
+            font-weight: bold;
+        }
+
+        @media (max-width: 767px) {
+            .mobile-logo {
+                max-width: 50%;
+            }
+
+            .d-sm-none {
+                display: none !important;
+            }
+        }
+
+        footer {
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.0);
+        }
+
+        #copyright {
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding-left: 0;
+        }
+
+        .image-container {
+            display: flex;
+            flex: 0 0 auto;
+            align-items: center;
+        }
+
+        .text-container {
+            font-size: x-small;
+            flex: 1;
+            height: 100%;
+            padding: 10px;
+        }
+
+        .image-container img, .text-container img {
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg sticky-top navbar-container">
+    <div class="container-fluid">
+        <div class="mx-auto my-auto">
+            <img src="img/title.jpg" alt="Mad Sam" class="mobile-logo d-block mx-auto pt-4 pb-2">
+        </div>
+    </div>
+</nav>
+
+<div id="section1" class="pt-3 pb-0 pb-md-3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-3 d-flex justify-content-center align-items-center">
+                <img src="img/cover.png" alt="Book Cover" class="img-fluid book-cover-image">
+            </div>
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+                <div>
+                    <h1><i>Mad Sam</i></h1>
+                    <h5>The Raving Maniac Vol. 1</h5>
+                    <p>Mad Sam, one of history's sickest killers, was a raving maniac in 1960’s Chicago, orchestrating
+                        gruesome murders that unfolded like a theatrical show, reminiscent of a joker. Based on a true
+                        story, he was notorious for causing chaos wherever he went and with everyone he encountered.
+                        Samuel "Mad Sam" DeStefano earned a reputation as one of the most unhinged and demented
+                        individuals to have ever walked the planet. Those unfortunate enough to cross his path often
+                        paid a steep price,
+
+                        as it ultimately cost them their lives.</p>
+                </div>
+                <a href="https://www.amazon.com/dp/B0CP41S85G" class="btn btn-primary mb-4 btn-lg"
+                   role="button">Amazon</a>
+                <a href="https://www.barnesandnoble.com/w/mad-sam-guy-ecks/1144446837"
+                   class="btn btn-primary btn-lg mb-4" role="button">Barnes & Nobles</a>
+            </div>
+            <div class="col-sm-0 col-md-3 d-sm-none d-md-flex justify-content-center ">
+                <img src="img/samfullbody.png" class="img-fluid d-sm-none d-md-flex" style="max-height: 500px;">
+            </div>
+            <div class="col-sm-12 col-md-0 p-0">
+                <div class="row mr-0">
+                    <div class="col-6 d-sm-flex d-md-none"
+                         style="color: #ed434b; font-size: x-large; text-align: right; right: -40px; margin-top: 40px; width: 30%">
+                        <i>Who was <b>Sam Destefano?</b></i>
+                    </div>
+                    <div class="col-6 p-0">
+                        <img src="img/samgun.png" class="img-fluid d-sm-flex d-md-none" style="max-height: 500px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="section2" class="row m-0">
+    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+        <div class="row">
+            <div class="p-4 justify-content-right col-12">
+                <div class="d-none d-md-flex">
+                    <h2>Who was Sam Destefano?</h2>
+                    <hr class="my-4">
+                </div>
+                <p>Samuel DeStefano, also known as "Mad Sam," who operated as a sadistic hoodlum in Chicago during the
+                    20th century. Credited for establishing a money loan system known as 'Juice Loans,' where he would
+                    lend someone $5, and in return, he was to be paid back $6 in interest. Every week, if that
+                    'interest' was not paid on the original $5 loan, he would 'squeeze' the money out of his client
+                    until all the interest and the original payment were paid in full.</p>
+                <p>Mad Sam was notorious for violently enforcing the repayment of these loans, and his tactics spread to
+                    criminal organizations across the United States. Mad Sam was a psychopathic killer with close ties
+                    to various Chicago mobsters and criminals. Despite his seemingly insane behavior, the Chicago mob
+                    tolerated him due to the significant profits he generated through his criminal activities. He will
+                    forever be remembered as one of the most depraved serial killers in Chicago's history. </p>
+                <div style="
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%;
+            width: 100%;">
+                    <iframe
+                            src="https://www.youtube.com/embed/9saXDOWkiUY?si=lcLXQzSOrk00Hg3x"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                            style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;">
+                    </iframe>
+                </div>
+            </div>
+
+            <div id="copyright" class="col-12 d-none d-md-flex">
+                <div class="image-container">
+                    <img src="img/companytitle.jpg" alt="Sam face" class="img-fluid footer-image">
+                </div>
+                <div class="text-container" style="padding-top: 0; padding-bottom: 0;">
+                    <p class="footer-text">Mad Sam: The Raving Maniac Vol. 1 © 2023</p>
+                    <p class="footer-text">Mad Sam is a Trademark of 6 For 5 Productions LLC</p>
+                    <p class="footer-text">All content is copyright of 6 For 5 Productions LLC and may not be used
+                        without write permission of 6 For 5 Productions LLC.</p>
+                    <a href="mailto:madsamcomics@gmail.com" class="footer-email">madsamcomics@gmail.com</a>
+                </div>
+            </div>
+
+            <div id="copyright2" class="col-12 d-flex d-md-none">
+                <div class="row">
+                    <div class="col-6 d-flex flex-column justify-content-center" style="font-size: x-small;">
+                        <p class="footer-text"><b>Mad Sam: The Raving Maniac Vol. 1 © 2023</b></p>
+                        <p class="footer-text">Mad Sam is a Trademark of 6 For 5 Productions LLC</p>
+                        <p class="footer-text">All content is copyright of 6 For 5 Productions LLC and may not be used
+                            without write permission of 6 For 5 Productions LLC.</p>
+                    </div>
+                    <div class="col-6">
+                        <img src="img/samfullbody.png" alt="Sam face" class="img-fluid">
+                    </div>
+                    <div class="col-12 text-center">
+                        <a href="mailto:madsamcomics@gmail.com" class="footer-email m-auto" style="font-size: larger;">madsamcomics@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6 d-md-flex justify-content-center p-0 m-0">
+        <img id="samGunImage" class="d-none d-md-flex" src="img/samgun.png">
+    </div>
+</div>
+<div class="align-items-center d-block d-md-none" style="background-color: #f9f90f">
+    <img src="img/companytitle.jpg" alt="Sam face" class="img-fluid footer-image d-block d-md-none m-auto">
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
